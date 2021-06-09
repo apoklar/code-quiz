@@ -1,0 +1,42 @@
+body {
+    font-family: "Indie Flower";
+    font-size: 30px;
+    font:bold;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    color: rgb(161, 66, 161);
+    height: 60px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Indie Flower";
+}
+
+.btn {
+    background-color: lightgreen;
+    font-family: "Indie Flower";
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: rgb(161, 255, 161);
+}
+
+.btnHeader {
+    background-color: teal;
+    font-family: "Indie Flower";
+    font-size: 27px;
+    font: bold;
+    border-radius: 8px;
+}
+
+.btnHeader:hover {
+    background-color: rgb(6, 175, 175);
+}
