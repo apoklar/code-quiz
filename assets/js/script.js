@@ -1,9 +1,29 @@
 var questionQuiz = document.getElementById("quiz");
 var questionSubmit = document.getElementById("results");
 var score = document.getElementById("score");
-var timer = document.getElementById("timer");
+var timer = document.getElementById("timeLeft");
 
-var startQuiz = document.getElementById('start');
+var startQuiz = document.getElementById('start-quiz');
+
+var score = 0;
+var secondsLeft = 75;
+var currentQuestionIndex = 0;
+
+function goToNextQuestion(whatTheUserClicked) {
+  var correctText = questions[currentQuestionIndex].answer;
+
+  if (whatTheUserClicked === correctText) {
+    console.log("Correct!");
+    score++;
+  }
+  else {
+    console.log("Incorrect.");
+  }
+  currentQuestionIndex++;
+  getNewQuestion(currentQuestionIndex);
+
+
+}
 
 const questions = [
     {
@@ -43,3 +63,5 @@ const questions = [
         ]
     }
 ]
+
+console.log(questions);

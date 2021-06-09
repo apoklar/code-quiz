@@ -8,31 +8,37 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Code Quiz</title>
 </head>
+
 <body>
     <header>
         <div>
             <button class="btnHeader" id="view-high-scores">View High Scores</button>
         </div>
         <div>
-            <p>Time: <span id="timeLeft">xxx</span></p>
+            <p>Time Remaining: <span id="timeLeft"></span></p>
         </div>
          
     </header>
 
         <div id="mainDiv"> 
-            <div id="gridContainer">
-                <p id="questionDisplay">Javascript Code Quiz!</p>
+            <div id="quiz">
+                <h1 class="title">Javascript Code Quiz!</h1>
                 <p id="finalScoreDisplay"></p>
                 <p id="enterInitials"></p>
                 <textarea id=initialsArea></textarea>
-                <button class="btn" id="start-quiz">Start Quiz</button>
+                
+                <div id="question">Question</div>
                 <button class="btn" id="answer1"></button>
                 <button class="btn" id="answer2"></button>
                 <button class="btn" id="answer3"></button>
                 <button class="btn" id="answer4"></button>
-                <button class="btn" id="submitScore"></button>
-
+                
             </div>
+            <div>
+                <button class="btn" id="start-quiz">Start Quiz</button>
+                <button class="btn" id="submitScore">Submit Score</button>
+            </div>
+
             <div id="correctAnswer"></div>
             <p id=wrongAnswer></p>
             </div>
