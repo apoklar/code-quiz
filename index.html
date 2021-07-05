@@ -15,35 +15,41 @@
             <button class="btnHeader" id="view-high-scores">View High Scores</button>
         </div>
         <div>
-            <p>Time Remaining: <span id="timeLeft"></span></p>
+            <p>Time Remaining: <span id="timeLeft">00:60</span></p>
         </div>
          
     </header>
 
         <div id="mainDiv"> 
+            
             <div id="quiz">
-                <h1 class="title">Javascript Code Quiz!</h1>
-                <p id="finalScoreDisplay"></p>
-                <p id="enterInitials"></p>
-                <textarea id=initialsArea></textarea>
-                
-                <div id="question">Question</div>
+                <h1 class="title">Javascript Code Quiz!</h1>  
+            </div>
+            
+            <div>
+                <button class="btn" id="start-quiz">Start Quiz</button>
+            </div>
+
+        </div>
+
+        <div id="questionDiv" style="display: none">
+            <div id="question">Question</div>
+
+            <div id="answers">
                 <button class="btn" id="answer1"></button>
                 <button class="btn" id="answer2"></button>
                 <button class="btn" id="answer3"></button>
                 <button class="btn" id="answer4"></button>
-                
-            </div>
-            <div>
-                <button class="btn" id="start-quiz">Start Quiz</button>
-                <button class="btn" id="submitScore">Submit Score</button>
             </div>
 
-            <div id="correctAnswer"></div>
-            <p id=wrongAnswer></p>
-            </div>
+        </div>
 
-    </section>
+        <div id="highScore" style="display: none">
+            <p id="finalScoreDisplay"></p>
+            <p id="enterInitials"></p>
+            <button class="btn" id="submit">Submit Score</button>
+            <textarea id=initialsArea></textarea>
+        </div>
     
     <script src="./assets/js/script.js"></script>
 </body>
