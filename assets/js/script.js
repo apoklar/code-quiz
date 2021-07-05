@@ -31,11 +31,12 @@ function showQuestion(){
     document.getElementById('answer3').addEventListener("click", checkAnswer);
     document.getElementById('answer4').addEventListener("click", checkAnswer);
 
-    document.querySelectorAll('.btn').addEventListener("click", showQuestion)
+    document.querySelectorAll('.btn').addEventListener("click", showQuestion);
+
 }
 
 function startTimer(){
-    var sec = 60;
+    var sec = 59;
     timer = setInterval(function(){
         document.getElementById('timeLeft').innerHTML='00:'+sec;
         sec--;
@@ -46,7 +47,7 @@ function startTimer(){
 }
 
 document.getElementById('start-quiz').addEventListener("click", function() {
-    var oneMinute = 60,
+    var oneMinute = 59,
         display = document.querySelector('.timeLeft');
     startTimer(oneMinute, display);
 
@@ -55,6 +56,7 @@ document.getElementById('start-quiz').addEventListener("click", function() {
 
 function showResults (){
   const answers = quizContainer.querySelectorAll('.answers');
+  document.getElementById('view-high-scores').addEventListener("click", showResults)
 
 }
 
@@ -67,10 +69,6 @@ function checkAnswer (event){
     questionIndex++
     showQuestion()
 }
-
-var quizContainer = document.getElementById("quiz");
-var submitButton = document.getElementById("submit");
-var resultsContainer = document.getElementById("results");
 
 const questions = [
     {

@@ -27,6 +27,7 @@ header {
     font-family: "Indie Flower";
     font-size: 30px;
     border-radius: 8px;
+    text-align: center;
 }
 
 .btn:hover {
@@ -57,4 +58,8 @@ header {
     background-color: lightgreen;
     place-self: center;
     font-family: "indie Flower";
+}
+
+#start-quiz.hover {
+    background-color: rgb(161, 255, 161);
 }
